@@ -27,7 +27,9 @@ header{
     padding: 25px 50px;
     display: flex;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -35,13 +37,20 @@ header{
     z-index: 1000;
 }
 
+nav#principal{
+    justify-content: center;
+    display: flex;
+}
+
 nav#principal ul{
     list-style: none;
-    margin-right: 200px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
 }
 
 nav#principal li{
-    display: flex;
     margin-top: 20px;
 }
 
@@ -49,12 +58,13 @@ nav#principal a{
     list-style: none;
     margin-top: 10px;
     color: var(--color-amarillo);
+    font-size: 20px;
 }
 
 h1{
-    margin-left: 150px;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /*main*/
@@ -102,7 +112,7 @@ img#synchron{
 }
 
 h2{
-    margin-top: 350px;
+    margin-top: 250px;
 }
 
 main a{
